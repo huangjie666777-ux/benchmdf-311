@@ -1,0 +1,10 @@
+/build/
+/build-*/
+/cmake-build-*/
+/CMakeFiles/
+/CMakeCache.txt
+/Testing/
+*.o
+*.a
+!third_party/zlib/lib/libz.a
+*.so

@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.28)
+project(benchmdf_311 VERSION 0.1.0 LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+set(ZLIB_INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/third_party/zlib/include" CACHE PATH "Pinned zlib headers")
+set(ZLIB_LIBRARY "${CMAKE_CURRENT_SOURCE_DIR}/third_party/zlib/lib/libz.a" CACHE FILEPATH "Pinned zlib static library")
+find_package(ZLIB 1.3.1 EXACT REQUIRED)
